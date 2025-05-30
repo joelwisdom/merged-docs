@@ -30,7 +30,7 @@ def merge():
             output_stream = io.BytesIO()
             doc.save(output_stream)
             output_stream.seek(0)
-            filename = f"{data.get('name', 'recipient')}_letter.docx"
+            filename = f"{data.get('name')}_letter.docx"
             zip_file.writestr(filename, output_stream.read())
 
     zip_buffer.seek(0)
