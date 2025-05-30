@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mail Merge Tool</title>
+</head>
+<body>
+    <h2>Upload Template and Excel File</h2>
+    <form action="/merge" method="post" enctype="multipart/form-data">
+        <label>Word Template (.docx):</label><br>
+        <input type="file" name="template" required><br><br>
+
+        <label>Excel File (.xlsx):</label><br>
+        <input type="file" name="data" required><br><br>
+
+        <input type="submit" value="Generate Documents">
+    </form>
+</body>
+</html>
